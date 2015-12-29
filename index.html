@@ -1,0 +1,185 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>杭州生活网</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+</head>
+<body>
+<div id="page">
+    <div id="header">
+        <div class="background">
+            <h1 id="logo"><a href="index.html">杭州生活网</a></h1>
+
+            <div id="navigation">
+                <ul>
+                    <li class="selected">
+                        <a href="index.html">首页
+                        </a>
+                    </li>
+                    <li>
+                        <a href="services.html">旅游景点</a>
+                    </li>
+                    <li>
+                        <a href="rates.html">杭州美食</a>
+                    </li>
+                    <li>
+                        <a href="newslist.html">杭州新闻</a>
+                    </li>
+                    <li>
+                        <a href="blog.html">杭州娱乐</a>
+                    </li>
+                    <li>
+                        <a href="about.html">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="contents">
+        <div id="adbox">
+            <div>
+                <!-- solo pic-->
+                <!--<a href="view.html">
+                <img src="images/index.jpg" alt="Img" height="390" width="632">
+                </a>
+
+                <h1>杭州西湖</h1>
+                <h4>杭州西湖是世界文化遗产，江南三大名湖之一，首批国家重点风景名胜区，首批全国文明风景旅游区示范点，中国十大名胜古迹、中国主要的观赏性淡水湖泊之一，在中国的历史文化和风景名胜中占有重要地位。<br>
+                西湖是一首诗，一幅天然图画，一个美丽动人的故事，断桥、苏堤漫步、白堤等。</h4>
+                <p>
+                    更多景点点击<a href="services.html">这里</a>
+                </p>-->
+                <div style="float:left; height:390;width:632">
+                    <SCRIPT>
+                        var widths = 632;
+                        var heights = 390;
+                        var counts = 3;
+                        img1 = new Image();
+                        img1.src = 'images/index.jpg';
+                        img2 = new Image();
+                        img2.src = 'images/xihu2.jpg';
+                        img3 = new Image();
+                        img3.src = 'images/20131123054516395.jpg';
+                        url1 = new Image();
+                        url1.src = 'view.html';
+                        url2 = new Image();
+                        url2.src = 'view.html';
+                        url3 = new Image();
+                        url3.src = 'view.html';
+                        var nn = 1;
+                        var key = 0;
+                        function change_img() {
+                            if (key == 0) {
+                                key = 1;
+                            }
+                            else if (document.all) {
+                                document.getElementById("pic").filters[0].Apply();
+                                document.getElementById("pic").filters[0].Play(duration = 2);
+                            }
+                            eval('document.getElementById("pic").src=img' + nn + '.src');
+                            eval('document.getElementById("url").href=url' + nn + '.src');
+                            for (var i = 1; i <= counts; i++) {
+                                document.getElementById("xxjdjj" + i).className = 'axx';
+                            }
+                            document.getElementById("xxjdjj" + nn).className = 'bxx';
+                            nn++;
+                            if (nn > counts) {
+                                nn = 1;
+                            }
+                            tt = setTimeout('change_img()', 4000);
+                        }
+                        function changeimg(n) {
+                            nn = n;
+                            window.clearInterval(tt);
+                            change_img();
+                        }
+                        document.write('<style>');
+                        document.write('.axx{padding:1px 7px;border-left:#cccccc 1px solid;}');
+                        document.write('a.axx:link,a.axx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#666;}');
+                        document.write('a.axx:active,a.axx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#999;}');
+                        document.write('.bxx{padding:1px 7px;border-left:#cccccc 1px solid;}');
+                        document.write('a.bxx:link,a.bxx:visited{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+                        document.write('a.bxx:active,a.bxx:hover{text-decoration:none;color:#fff;line-height:12px;font:9px sans-serif;background-color:#D34600;}');
+                        document.write('</style>');
+                        document.write('<div style="width:' + widths + 'px;height:' + heights + 'px;overflow:hidden;text-overflow:clip;">');
+                        document.write('<div><a id="url" target="_blank"><img id="pic" style="border:0px;filter:progid:dximagetransform.microsoft.wipe(gradientsize=1.0,wipestyle=4, motion=forward)" width=' + widths + ' height=' + heights + ' /></a></div>');
+                        document.write('<div style="filter:alpha(style=1,opacity=10,finishOpacity=80);background: #888888;width:100%-2px;text-align:right;top:-12px;position:relative;margin:1px;height:12px;padding:0px;margin:0px;border:0px;">');
+                        for (var i = 1; i < counts + 1; i++) {
+                            document.write('<a href="javascript:changeimg(' + i + ');" id="xxjdjj' + i + '" class="axx" target="_self">' + i + '</a>');
+                        }
+                        document.write('</div></div>');
+                        change_img();
+                    </SCRIPT>
+                </div>
+                <div style="float:left;margin-left:20px; height:390;width:280">
+                    <h1>杭州西湖</h1>
+                    <h4>
+                        杭州西湖是世界文化遗产，江南三大名湖之一，首批国家重点风景名胜区，首批全国文明风景旅游区示范点，中国十大名胜古迹、中国主要的观赏性淡水湖泊之一，在中国的历史文化和风景名胜中占有重要地位。<br>
+                        西湖是一首诗，一幅天然图画，一个美丽动人的故事，断桥、苏堤漫步、白堤等。</h4>
+
+                    <p>
+                        更多景点点击<a href="services.html">这里</a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+        <div class="sidebar">
+            <h4><a href="newslist.html">杭州新闻</a></h4>
+            <ul>
+                <li>
+                    <span class="time">2014-03-24 14:28:55</span> <a href="news.html">江宜桦：在野党领袖声援抗议学生值得商榷</a>
+                </li>
+                <li>
+                    <span class="time">2014-03-24 14:28:55</span> <a href="news.html">江宜桦：在野党领袖声援抗议学生值得商榷</a>
+                </li>
+            </ul>
+            <hr>
+            <h4><a href="blog.html">杭州娱乐</a></h4>
+            <ul>
+                <li>
+                    <a href="fad.html">
+                        <img src="images/fad1.jpg" alt="Img" height="180" width="260">
+                    </a>
+                    <span class="time">喜丹力桌球音乐休闲吧</span> <a href="blog.html">地址： 镇巴县海壕街(近建司宾馆)<br>电话：0916-6713232 </a>
+                </li>
+            </ul>
+        </div>
+        <div id="main">
+            <h4><a href="rates.html">杭州美食</a></h4>
+
+            <p>
+                杭州菜质优价廉，味道风靡江南。属中国八大菜系之浙菜，“清爽别致”是杭州菜的最大特色。选料时鲜，制作精细，注重营养，讲求鲜咸合一，清淡鲜嫩。宋代大诗人苏东坡曾盛赞“天下酒宴之盛，未有如杭城也”，且有“闻香下马”的典故。 </p>
+            <ul>
+                <li>
+                    <p>
+                        <a href="food.html">
+                            <img src="images/food1.jpg" alt="Img" height="180" width="260">
+                        </a>
+                        <b><a href="food.html">鹿筋野猪肚</a></b> 鹿筋野猪肚是我个人很喜欢的一道菜，量对四个人来说还是有点大。<br>
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        <a href="food.html">
+                            <img src="images/food2.jpg" alt="Img" height="180" width="260">
+                        </a>
+                        <b><a href="food.html">杭州腊肉</a></b> 腊肉——又叫“熏肉”，是陕南秦巴山区一带的地方特产。而镇巴县的腊肉更是其中的精品。<br>
+                    </p>
+                </li>
+            </ul>
+            <a href="rates.html" class="more">更多美食</a>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="background">
+            <div class="body">
+                <p id="footnote">
+                    © Copyright 2023 All rights reserved&nbsp;.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
